@@ -15,9 +15,9 @@ BloxNickGenerator is a Python package that allows you to generate available user
 ```python
 from bloxnickgenerator.generator import genUsername
 
-usernames = genUsername(3)
+usernames = genUsername(3) # gen 3 usernames
 print("Generated Usernames:", usernames)
-```
+``` 
 ## Installation
 
 You can install BloxNickGenerator using pip:
@@ -25,3 +25,7 @@ You can install BloxNickGenerator using pip:
 ```bash
 pip install bloxnickgenerator
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
