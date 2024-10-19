@@ -1,5 +1,5 @@
-## BloxNickGenerator
-# Introduction
+# BloxNickGenerator
+## Introduction
 BloxNickGenerator is a Python package that allows you to generate available usernames for Roblox. It checks the availability of usernames and ensures that the generated usernames do not contain profanity.
 
 ## Features
@@ -9,10 +9,10 @@ BloxNickGenerator is a Python package that allows you to generate available user
 - Customize generated usernames with optional prefixes, suffixes, and length constraints.
 
 
-## Usage
+# Usage
 You can generate nicknames with various customization options. Here are some examples:
 
-# Basic Usage
+### Basic Usage
 Generate a specified number of nicknames:
 
 ```python
@@ -22,7 +22,7 @@ generated_nicks = genNicknames(3) # Generate 3 nicknames
 print("Generated Nicknames:", generated_nicks)
 ```
 
-# Using Prefixes and Suffixes
+### Using Prefixes and Suffixes
 You can add prefixes and suffixes to the generated nicknames:
 
 ```python
@@ -30,11 +30,19 @@ generated_nicks = genNicknames(3, prefix='Cool_', suffix='_2024') # Generate nic
 print("Generated Nicknames:", generated_nicks)
 ```
 
-# Length Constraints
+### Length Constraints
 Set minimum and maximum lengths for the nicknames:
 
 ```python
-generated_nicks = genNicknames(3, min_length=5, max_length=12) # Generate nicknames within specific length constraints print("Generated Nicknames:", generated_nicks)
+generated_nicks = genNicknames(3, min_length=5, max_length=16) # Generate nicknames within specific length constraints 
+print("Generated Nicknames:", generated_nicks)
+```
+
+### Example
+```python
+nicks = genNicknames(3, prefix='Xx_', suffix='_Xx', min_length=5, max_length=16) 
+print("Generated Nicknames:", nicks) 
+# Result: Xx_examplee_xX
 ```
 
 - Note: Depending on the number of nicknames you want to generate, it may take a while.
