@@ -10,9 +10,18 @@ BloxNickGenerator is a Python package that allows you to generate available user
 - Check for profanity using an external API.
 - Verify if usernames are already taken on Roblox.
 
+
+## Usage
+```python
+from bloxnickgenerator.generator import genUsername
+
+usernames = genUsername(3)
+print("Generated Usernames:", usernames)
+```
 ## Installation
 
 You can install BloxNickGenerator using pip:
 
 ```bash
 pip install bloxnickgenerator
+```
