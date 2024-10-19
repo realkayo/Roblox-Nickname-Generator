@@ -48,7 +48,7 @@ print("Generated Nicknames:", nicks)
 - Note: Depending on the number of nicknames you want to generate, it may take a while.
 
 # Installation
-## You can install BloxNickGenerator using pip:
+### You can install BloxNickGenerator using pip:
 
 ```bash
 pip install bloxnickgenerator
