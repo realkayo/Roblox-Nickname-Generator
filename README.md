@@ -28,7 +28,7 @@ You can install BloxNickGenerator using pip:
 pip install bloxnickgenerator
 ```
 
-Pypi page: https://pypi.org/project/bloxnickgenerator/0.1.1/
+https://pypi.org/project/bloxnickgenerator/0.1.1/
 
 ## License
 
