@@ -26,6 +26,8 @@ print("Generated Nicknames:", generated_nicks)
 You can add prefixes and suffixes to the generated nicknames:
 
 ```python
+from bloxnickgenerator.generator import genNicknames
+
 generated_nicks = genNicknames(3, prefix='Xx_', suffix='test') # Generate nicknames with a prefix and suffix 
 print("Generated Nicknames:", generated_nicks)
 ```
@@ -34,12 +36,16 @@ print("Generated Nicknames:", generated_nicks)
 Set minimum and maximum lengths for the nicknames:
 
 ```python
+from bloxnickgenerator.generator import genNicknames
+
 generated_nicks = genNicknames(3, min_length=5, max_length=16) # Generate nicknames within specific length constraints 
 print("Generated Nicknames:", generated_nicks)
 ```
 
 ### Example
 ```python
+from bloxnickgenerator.generator import genNicknames
+
 nicks = genNicknames(3, prefix='Xx_', suffix='test', min_length=5, max_length=16) 
 print("Generated Nicknames:", nicks) 
 # Result: ['Xx_jasonlongtest', 'Xx_jessica63test', 'Xx_znixontest']
