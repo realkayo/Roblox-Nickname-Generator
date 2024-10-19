@@ -54,7 +54,7 @@ print("Generated Nicknames:", nicks)
 pip install bloxnickgenerator
 ```
 
-- https://pypi.org/project/bloxnickgenerator/0.1.1/
+- https://pypi.org/project/bloxnickgenerator/0.1.2/
 
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
