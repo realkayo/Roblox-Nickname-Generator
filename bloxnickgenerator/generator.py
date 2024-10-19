@@ -41,18 +41,33 @@ def is_username_taken(name):
         print(f"Error: {err}")
         return False
 
-def genNicknames(amount: int = 1):
+def genNicknames(amount: int = 1, prefix: str = '', suffix: str = '', min_length: int = 8, max_length: int = 15):
     """
-    Generates a list of available nicknames.
+    Generates a list of available nicknames with optional customization.
 
     :param amount: The number of nicknames to generate. Default is 1.
+    :param prefix: Optional prefix to add to each nickname. Default is an empty string.
+    :param suffix: Optional suffix to add to each nickname. Default is an empty string.
+    :param min_length: Minimum length of the nickname. Default is 3.
+    :param max_length: Maximum length of the nickname. Default is 15.
     :return: A list of valid nicknames.
     """
     generated_nicks = []
     
     while len(generated_nicks) < amount:
         nick = fake.user_name()
+
+       
+        if prefix:
+            nick = prefix + nick
+        if suffix:
+            nick = nick + suffix
         
+        
+        if len(nick) < min_length or len(nick) > max_length:
+            continue
+        
+    
         if not contains_profanity(nick) and not is_username_taken(nick):
             generated_nicks.append(nick)
     
