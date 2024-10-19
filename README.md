@@ -59,4 +59,4 @@ pip install bloxnickgenerator
 # License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Give a ⭐ to support the project for future updates
+### Give a ⭐ to support the project for future updates
