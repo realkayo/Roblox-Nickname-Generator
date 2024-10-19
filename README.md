@@ -40,9 +40,9 @@ print("Generated Nicknames:", generated_nicks)
 
 ### Example
 ```python
-nicks = genNicknames(3, prefix='Xx_', suffix='_Xx', min_length=5, max_length=16) 
+nicks = genNicknames(3, prefix='Xx_', suffix='test', min_length=5, max_length=16) 
 print("Generated Nicknames:", nicks) 
-# Result: Xx_examplee_xX
+# Result: ['Xx_jasonlongtest', 'Xx_jessica63test', 'Xx_znixontest']s
 ```
 
 - Note: Depending on the number of nicknames you want to generate, it may take a while.
